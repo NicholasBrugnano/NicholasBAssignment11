@@ -13,12 +13,12 @@ jobs:
     - name: Run find_lowest_number on the first test case (10 numbers).
       run: python find_lowest_number.py test_data/test1_input.txt lowest_number1.txt
     - name: Compare expected output of first test case to actual.
-      run: diff lowest_number1.txt test_data/test1_actual.txt
+      run: diff lowest_number1.txt test_data/test1_expected.txt
     - name: Run find_lowest_number on the second test case (1 number).
       run: python find_lowest_number.py test_data/test2_input.txt lowest_number2.txt
     - name: Compare expected output of second test case to actual.
-      run: diff lowest_number2.txt test_data/test2_actual.txt
+      run: diff lowest_number2.txt test_data/test2_expected.txt
     - name: Run find_lowest_number on the third test case (empty file).
       run: python find_lowest_number.py test_data/test3_input.txt lowest_number3.txt
     - name: Compare expected output of first test case to actual.
-      run: diff lowest_number3.txt test_data/test3_actual.txt
+      run: diff lowest_number3.txt test_data/test3_expected.txt
