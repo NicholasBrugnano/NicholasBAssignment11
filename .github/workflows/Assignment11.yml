@@ -20,5 +20,5 @@ jobs:
       run: diff lowest_number2.txt test_data/test2_expected.txt
     - name: Run find_lowest_number on the third test case (empty file).
       run: python find_lowest_number.py test_data/test3_input.txt lowest_number3.txt
-    - name: Compare expected output of first test case to actual.
+    - name: Compare expected output of third test case to actual.
       run: diff lowest_number3.txt test_data/test3_expected.txt
